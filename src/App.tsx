@@ -1,9 +1,4 @@
-import {
-  Authenticated,
-  ErrorComponent,
-  GitHubBanner,
-  Refine,
-} from "@refinedev/core";
+import { Authenticated, ErrorComponent, Refine } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 
@@ -38,7 +33,6 @@ import { CreateTask, EditTask } from "./pages/tasks";
 function App() {
   return (
     <BrowserRouter>
-      <GitHubBanner />
       <RefineKbarProvider>
         <AntdApp>
           <DevtoolsProvider>
